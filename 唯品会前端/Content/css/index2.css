@@ -1,0 +1,53 @@
+.fixBottom {
+	width: 100%;
+	height: 45px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background: url(../Images/1/a5.png) center center no-repeat;
+	background-size: 85px;
+	background-color: rgba(255,255,255,.45);
+}
+.a1 {
+	position: absolute;
+	left: 58px;
+	top: 25px;
+	width: 31px;
+	height: 18px;
+}
+.a2 {
+	position: absolute;
+	left: 34px;
+	top: 38px;
+	width: 291px;
+	height: 65px;
+}
+.b1 {
+	width: 237px;
+	height: 21px;
+	margin-top: 116px;
+}
+.content-box {
+	width: 75%;
+	overflow: hidden;
+	margin: 6px auto;
+}
+.abox {
+	width: 108px;
+	margin: 3% 5%;
+	height: 153px;
+	float: left;
+	background: url(../Images/1/b3.png) no-repeat;
+	background-size: 100%;
+	position: relative;
+}
+.abox img {
+	width: 72%;
+	max-height: 78%;
+	position: absolute;
+	left: 14%;
+	top: 11%;
+}
+.yao {
+	width: 126px;
+}

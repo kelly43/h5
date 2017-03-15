@@ -1,0 +1,242 @@
+.big-box {
+	-webkit-box-orient: vertical;
+}
+.fixBottom {
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background: url(../Images/2/d5.png) center center no-repeat;
+	background-size: 277px;
+	background-color: rgba(255,255,255,.45);
+}
+.title-img {
+	width: 268px;
+	height: 26px;
+	background: url(../Images/2/c1.png) no-repeat;
+	background-size: 173px;
+	position: relative;
+	top: 2%;
+	margin: 0 auto;
+}
+.c2 {
+	width: 92px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.chanceNum {
+	width: 100%;
+	text-align: center;
+	font-size: 12px;
+	color: #fff;
+	margin-top: 3%;
+}
+.chance {
+	width: 268px;
+	height: 30px;
+	line-height: 32px;
+	border-radius: 8px;
+	margin: 0 auto;
+	margin-top: 1%;
+	font-size: 16px;
+	background-color: rgba(51,51,51,.2);
+	color: #fff;
+	text-align: center;
+}
+.c-times {
+	color: #E8C102;
+	display: inline-block;
+	margin: 0 6px;
+}
+.draw-content {
+	width: 288px;
+	margin: 10px auto;
+	overflow: hidden;
+	margin-top: 4%;
+}
+.fbox {
+	float: left;
+	overflow: hidden;
+	margin: 3% 10px;
+	width: 76px;
+	height: 107px;
+	position: relative;
+	box-shadow: 1px 1px 3px #666;
+	border-radius: 5px;
+}
+
+.fbox div {
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	border-radius: 5px;
+}
+.back {
+	float: left;
+	position: absolute;
+	background: url(../Images/2/d1.png) no-repeat;
+	background-size: 100%;
+}
+.front {
+	float: left;
+	background: url(../Images/2/d2.png) no-repeat;
+	background-size: 100%;
+	position: absolute;
+}
+.flip {
+	-webkit-transform: rotate3d(0, 1, 0, 0deg);
+	-webkit-transition-duration: 0.4s;
+	transform: rotate3d(0, 1, 0, 0deg);
+	transition-duration: 0.4s;
+}
+.fliped {
+	-webkit-transform: rotate3d(0, 1, 0, -180deg);
+	-webkit-transition-duration: 0.4s;
+	transform: rotate3d(0, 1, 0, -180deg);
+	transition-duration: 0.4s;
+}
+.refresh-btn {
+	width: 100px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	height: 24px;
+	background: url(../Images/2/d4.png) center center no-repeat;
+	background-size: 73px;
+	background-color: rgba(255,255,255,.8);
+	border-radius: 12px;
+	box-shadow: 1px 1px 3px #666;
+	display: none;
+}
+.show-box {
+	width: 80%;
+	border-radius: 10px;
+	background-color: #fff;
+	position: relative;
+	padding-bottom: 20px;
+}
+.img-title {
+	width: 100%;
+}
+.kind-img {
+	width: 93px;
+	padding: 10px 0 5px 0;
+}
+.kind-name {
+	width: 100%;
+	text-align: center;
+	color: #666;
+	font-size: 13px;
+}
+.kind-state {
+	font-size: 12px;
+	width: 100%;
+	color: #999;
+	text-align: center;
+	letter-spacing: 0;
+	padding-top: 10px;
+	transform: scale(.9);
+	-webkit-transform: scale(.9);
+}
+.inp {
+	display: block;
+	width: 81%;
+	margin: 0 auto;
+	margin-top: 10px;
+	padding: 10px;
+	background-color: rgba(32,174,171,.1);
+	border-radius: 6px;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	border: 1px solid #20AEAB;
+	font-size: 13px;
+	line-height: 20px;
+	color: #666;
+	outline: none;
+	resize: none;
+}
+.user-name {
+	margin-top: 2px;
+}
+.btnBg {
+	width: 82%;
+	height: 45px;
+	margin: 0 auto;
+	margin-top: 15px;
+	background: url(../Images/2/e3.png) no-repeat;
+	background-size: 100%;
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+.noChange-box {
+	width: 75%;
+	text-align: center;
+	color: #666;
+	padding-bottom: 0;
+}
+.noChange-box p {
+	font-size: 16px;
+	padding: 20px;
+}
+.change-btn {
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	font-size: 18px;
+	background-color: #21ADAA;
+	color: #fff;
+	border-radius: 0 0 10px 10px;
+}
+.ticket-title {
+	width: 100%;
+	display: block;
+}
+.ticket-info {
+	width: 89%;
+	margin: 15px auto;
+	color: #666;
+	font-size: 12px;
+	/*height: 96px;
+	overflow: hidden;
+	overflow-y: scroll;*/
+}
+.share-box {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.share-img {
+	width: 268px;
+	position: absolute;
+	top: 0;
+	right: 25px;
+}
+.close-btn {
+	display: none;
+}
+.redColor {
+	color: red;
+}
+.chanceKey {
+	position: absolute;
+	right: 10px;
+	bottom: -2px;
+	color: #ddd;
+	font-size: 12px;
+}
+.go-btn {
+	width: 185px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 20px;
+	background-color: #21ADAA;
+	color: #fff;
+	font-size: 14px;
+}

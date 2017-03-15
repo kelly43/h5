@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="email=no" />
+<link rel="stylesheet" href="../../Scripts/pace/themes/blue/pace-theme-center-circle.css" />
+<script src="../../Scripts/pace/pace.js"></script>
+<script>
+    paceOptions = {
+		document: true,
+		elements: true
+    };
+	Pace.on('hide', function(){
+		//加载完成
+		document.getElementById('index-box').style.display = 'block';
+
+    });
+</script>
+<link rel="stylesheet" type="text/css" href="../../Scripts/mdialog/css/basic.css">
+<link rel="stylesheet" type="text/css" href="../../Content/css/animate.css">
+<link rel="stylesheet" type="text/css" href="../../Scripts/loaders/loaders.css"/>
+<link rel="stylesheet" type="text/css" href="../../Content/css/base.css">
+
+<link rel="stylesheet" type="text/css" href="../../Content/css/index2.css?id=980">
+<script type="text/javascript">
+	var Json = [
+[
+{"ID":1,"name":"\u5fc3\u5fc3\u76f8\u5370","imgUrl":"..\/..\/Content\/Images\/card\/c1-1.png","seriesID":1,"seriesName":"\u7231\u60c5"},{"ID":2,"name":"\u6211\u7684\u5973\u738b","imgUrl":"..\/..\/Content\/Images\/card\/c1-2.png","seriesID":1,"seriesName":"\u7231\u60c5"},
+{"ID":3,"name":"\u4e00\u5fc3\u4e00\u610f","imgUrl":"..\/..\/Content\/Images\/card\/c1-3.png","seriesID":1,"seriesName":"\u7231\u60c5"},{"ID":4,"name":"\u7231\u60c5\u94a5\u5319","imgUrl":"..\/..\/Content\/Images\/card\/c1-4.png","seriesID":1,"seriesName":"\u7231\u60c5"}
+],
+[
+{"ID":5,"name":"\u5408\u5bb6\u5b89\u5eb7","imgUrl":"..\/..\/Content\/Images\/card\/c2-1.png","seriesID":2,"seriesName":"\u5e73\u5b89"},{"ID":6,"name":"\u5e73\u5b89\u795d\u798f","imgUrl":"..\/..\/Content\/Images\/card\/c2-2.png","seriesID":2,"seriesName":"\u5e73\u5b89"},
+{"ID":7,"name":"\u5e73\u5e73\u5b89\u5b89","imgUrl":"..\/..\/Content\/Images\/card\/c2-3.png","seriesID":2,"seriesName":"\u5e73\u5b89"},{"ID":8,"name":"\u798f\u7984\u5e73\u5b89","imgUrl":"..\/..\/Content\/Images\/card\/c2-4.png","seriesID":2,"seriesName":"\u5e73\u5b89"}
+],
+[
+{"ID":9,"name":"\u7709\u5f00\u773c\u7b11","imgUrl":"..\/..\/Content\/Images\/card\/c3-1.png","seriesID":3,"seriesName":"\u5feb\u4e50"},{"ID":10,"name":"\u6b22\u4e50\u6ee1\u6000","imgUrl":"..\/..\/Content\/Images\/card\/c3-2.png","seriesID":3,"seriesName":"\u5feb\u4e50"},
+{"ID":11,"name":"\u6b22\u5929\u559c\u5730","imgUrl":"..\/..\/Content\/Images\/card\/c3-3.png","seriesID":3,"seriesName":"\u5feb\u4e50"},{"ID":12,"name":"\u559c\u7b11\u989c\u5f00","imgUrl":"..\/..\/Content\/Images\/card\/c3-4.png","seriesID":3,"seriesName":"\u5feb\u4e50"}
+],
+[
+{"ID":13,"name":"\u62db\u8d22\u8fdb\u5b9d","imgUrl":"..\/..\/Content\/Images\/card\/c4-1.png","seriesID":4,"seriesName":"\u8d22\u5bcc"},{"ID":14,"name":"\u559c\u8fce\u8d22\u795e","imgUrl":"..\/..\/Content\/Images\/card\/c4-2.png","seriesID":4,"seriesName":"\u8d22\u5bcc"},
+{"ID":15,"name":"\u5e74\u5e74\u6709\u4f59","imgUrl":"..\/..\/Content\/Images\/card\/c4-3.png","seriesID":4,"seriesName":"\u8d22\u5bcc"},{"ID":16,"name":"\u957f\u547d\u5bcc\u8d35","imgUrl":"..\/..\/Content\/Images\/card\/c4-4.png","seriesID":4,"seriesName":"\u8d22\u5bcc"}
+]
+];
+
+</script>
+</head>
+<body>
+
+<!-- 与后台交互时的loading -->
+<div class="loadBox loading">
+    <div class="loader-inner ball-pulse-rise"></div>
+</div>
+
+<!-- 页面内容 screen单屏，page长屏-->
+<div class="index-box screen" id="index-box">
+	<img src="../../Content/Images/1/a1.png" class="a1">
+	<img src="../../Content/Images/1/a2.png" class="a2">
+	<img src="../../Content/Images/1/b1.png" class="b1 imgBg">
+	<div class="content-box">
+		<div class="abox">
+			<img src="" alt="爱情">
+		</div>
+		<div class="abox">
+			<img src="" alt="财富">
+		</div>
+		<div class="abox">
+			<img src="" alt="平安">
+		</div>
+		<div class="abox">
+			<img src="" alt="快乐">
+		</div>
+	</div>
+	<img src="../../Content/Images/1/b4.png" class="yao imgBg">
+	<div class="fixBottom"></div>
+</div>
+
+<script type="text/javascript" src="../../Scripts/Index/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../../Scripts/pageResponse-master/js/pageResponse.js"></script>
+<script type="text/javascript" src="../../Scripts/loaders/loaders.css.js"></script>
+<script type="text/javascript" src="../../Scripts/mdialog/js/mdialog.js"></script>
+<script type="text/javascript" src="../../Scripts/Index/Ajax.js"></script>
+<script type="text/javascript" src="../../Scripts/Index/index2.js"></script>
+</body>
+</html>

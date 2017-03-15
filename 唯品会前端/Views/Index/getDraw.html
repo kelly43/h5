@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="email=no" />
+<link rel="stylesheet" href="../../Scripts/pace/themes/blue/pace-theme-center-circle.css" />
+<script src="../../Scripts/pace/pace.js"></script>
+<script>
+    paceOptions = {
+		document: true,
+		elements: true
+    };
+	Pace.on('hide', function(){
+		//加载完成
+		document.getElementById('index-box').style.display = 'block';
+
+    });
+</script>
+<link rel="stylesheet" type="text/css" href="../../Scripts/mdialog/css/basic.css">
+<link rel="stylesheet" type="text/css" href="../../Content/css/animate.css">
+<link rel="stylesheet" type="text/css" href="../../Scripts/loaders/loaders.css"/>
+<link rel="stylesheet" type="text/css" href="../../Content/css/base.css">
+
+<link rel="stylesheet" type="text/css" href="../../Content/css/getDraw.css?id=pp">
+<script type="text/javascript">
+/*	var UserJson = {"isReset":true,"userID":1,"chanceNum":3,"bindCardID":2,"needCard":2,"bindCardName":"我的女王","bingCardNameImg":"..\/..\/Content\/Images\/card\/n1-2.png","isWin":false,"isSaveInfo":true,"name":"dfs","phone":"15817145962","address":"sdfasf",
+"cardRecord":[{"cardID":3,"isRight":false,"cardTime":"2016-02-01 08:07:08","pace":0,"imgUrl":"..\/..\/Content\/Images\/3\/dd1-3.png"},{"cardID":2,"isRight":true,"cardTime":"2016-02-01 08:07:08","pace":3,"imgUrl":"..\/..\/Content\/Images\/3\/dd1-2.png"},{"cardID":1,"isRight":false,"cardTime":"2016-02-01 08:07:08","pace":8,"imgUrl":"..\/..\/Content\/Images\/3\/dd1-1.png"},{"cardID":4,"isRight":false,"cardTime":"2016-02-01 08:07:08","pace":6,"imgUrl":"..\/..\/Content\/Images\/3\/dd1-4.png"},{"cardID":3,"isRight":false,"cardTime":"2016-02-01 08:07:08","pace":7,"imgUrl":"..\/..\/Content\/Images\/3\/dd1-3.png"}],
+"prizeList":[{"prizeID":1,"prizeName":"黄金(足金)Charme串珠系列生肖猴转运珠","prizeDesc":"（价值1280元）","prizeImg":"..\/..\/Content\/Images\/Javy\/fsdcedfs.png","prizeType":0,"chanceKey":"1236985478"}]},
+		Json = [
+{"ID":1,"name":"\u5fc3\u5fc3\u76f8\u5370","imgUrl":"..\/..\/Content\/Images\/3\/dd1-1.png","seriesID":1,"seriesName":"\u7231\u60c5"},{"ID":2,"name":"\u6211\u7684\u5973\u738b","imgUrl":"..\/..\/Content\/Images\/3\/dd1-2.png","seriesID":1,"seriesName":"\u7231\u60c5"},
+{"ID":3,"name":"\u4e00\u5fc3\u4e00\u610f","imgUrl":"..\/..\/Content\/Images\/3\/dd1-3.png","seriesID":1,"seriesName":"\u7231\u60c5"},{"ID":4,"name":"\u7231\u60c5\u94a5\u5319","imgUrl":"..\/..\/Content\/Images\/3\/dd1-4.png","seriesID":1,"seriesName":"\u7231\u60c5"}
+];*/
+var UserJson = {
+			"userID": 1,
+			"chanceNum": 2,
+			"bindCardID": 7,
+			"needCard": 3,
+			"bindCardName": "平平安安",
+			"bingCardNameImg": "../../Content/Images/4/n2-3.png",
+			"isWin": false,
+			"isSaveInfo": false,
+			"name": "",
+			"phone": "",
+			"address": "",
+			"isReset": false,
+			"cardRecord": [{
+				"cardID": 8,
+				"isRight": false,
+				"imgUrl": "../../Content/Images/4/dd2-4.png",
+				"cardPlace": 1,
+				"cardTime": "\/Date(1454577038787)\/"
+			}],
+			"prizeList": null
+		},
+		Json = [{
+			"ID": 5, "name": "合家安康", "imgUrl": "../../Content/Images/4/dd2-1.png", "seriesID": 2, "seriesName": "平安"
+		}, {
+			"ID": 6, "name": "平安祝福", "imgUrl": "../../Content/Images/4/dd2-2.png", "seriesID": 2, "seriesName": "平安"
+		}, {
+			"ID": 7, "name": "平平安安", "imgUrl": "../../Content/Images/4/oo2-3.png", "seriesID": 2, "seriesName": "平安"
+		}, {
+			"ID": 8, "name": "福禄平安", "imgUrl": "../../Content/Images/4/dd2-4.png", "seriesID": 2, "seriesName": "平安"
+		}];
+
+</script>
+</head>
+<body>
+
+<!-- 与后台交互时的loading -->
+<div class="loadBox loading">
+    <div class="loader-inner ball-spin-fade-loader"></div>
+</div>
+
+<!-- 页面内容 screen单屏，page长屏-->
+<div class="index-box screen" id="index-box">
+	<div class="big-box webkit">
+		<div class="title-img">
+			<img src="" class="c2">
+		</div>
+		<p class="chanceNum">还需集<span class="rightNum">3</span>张<span class="cardName">心心相印</span>的卡牌，周生生送你一份大礼</p>
+		<p class="chance">还剩<span class="c-times">0</span>次机会</p>
+		<div class="draw-content">
+			<div class="fbox">
+				<div class="front fliped"></div>
+				<div class="back flip"></div>
+			</div>
+			<div class="fbox">
+				<div class="front fliped"></div>
+				<div class="back flip"></div>
+			</div>
+			<div class="fbox">
+				<div class="front fliped"></div>
+				<div class="back flip"></div>
+			</div>
+			<div class="fbox">
+				<div class="front fliped"></div>
+				<div class="back flip"></div>
+			</div>
+			<div class="fbox">
+				<div class="front fliped"></div>
+				<div class="back flip"></div>
+			</div>
+			<div class="fbox">
+				<div class="front fliped"></div>
+				<div class="back flip"></div>
+			</div>
+			<div class="fbox">
+				<div class="front fliped"></div>
+				<div class="back flip"></div>
+			</div>
+			<div class="fbox">
+				<div class="front fliped"></div>
+				<div class="back flip"></div>
+			</div>
+			<div class="fbox">
+				<div class="front fliped"></div>
+				<div class="back flip"></div>
+			</div>
+		</div>
+		<div class="refresh-btn"></div>
+	</div>
+	<div class="fixBottom"></div>
+
+	<!-- 遮层 class="afix" 全HTML只用一个 -->
+	<div class="afix"></div>
+	<!-- 实物类中奖弹框 -->
+	<div class="box" id="kind-box">
+		<div class="kind-box show-box">
+			<p class="chanceKey">sfda</p>
+			<img src="../../Content/Images/2/e1.png" class="img-title">
+			<img src="" alt="正在加载..." class="kind-img imgBg">
+			<p class="kind-name"></p>
+			<p class="kind-state">请填写您的信息,工作人员将尽快联系您领取奖品</p>
+			<input type="text" class="inp user-name" placeholder="请输入您的姓名">
+			<input type="text" class="inp user-phone" placeholder="请输入您的电话">
+			<textarea rows="3" class="inp address" placeholder="请输入您的地址"></textarea>
+			<div class="btnBg" id="apply-btn">
+				提交
+			</div>
+			<div class="btnBg close-btn" id="close-btn">
+				查看更多
+			</div>
+		</div>
+	</div>
+
+	<!-- 优惠券中奖弹框 -->
+	<div class="box" id="ticket-box">
+		<div class="ticket-box show-box">
+			<img src="../../Content/Images/2/f1.png" class="ticket-title">
+			<p class="ticket-info">时间：2.18 10：00 — 2.19 10：00<br/>
+				方法：在唯品会周生生专场，任意选购饰品，提交订单后，在口令编码处，输入<span class="redColor">周生生218</span>，即可减免30元。每个用户优惠口令仅限使用一次，再次使用无效。不与其他优惠红包叠加使用。</p>
+				<div class="go-btn">前往使用</div>
+		</div>
+	</div>
+
+	<!-- 机会用完弹框 -->
+	<div class="box" id="noChange-box">
+		<div class="noChange-box show-box">
+			<p>每日0点将刷新游戏记录<br/>（包含已抽中的牌数）<br/>抓紧时间抢猴（hao）运</p>
+			<div class="change-btn">我知道了</div>
+		</div>
+	</div>
+
+	<!-- 分享弹框 -->
+	<div class="box" id="share-box">
+		<div class="share-box">
+			<img src="../../Content/Images/2/g1.png" class="share-img">
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="../../Scripts/Index/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../../Scripts/pageResponse-master/js/pageResponse.js"></script>
+<script type="text/javascript" src="../../Scripts/loaders/loaders.css.js"></script>
+<script type="text/javascript" src="../../Scripts/mdialog/js/mdialog.js"></script>
+<script type="text/javascript" src="../../Scripts/Index/Ajax.js"></script>
+<script type="text/javascript" src="../../Scripts/Index/getDraw.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="email=no" />
+<link rel="stylesheet" href="../../Scripts/pace/themes/blue/pace-theme-center-circle.css" />
+<script src="../../Scripts/pace/pace.js"></script>
+<script>
+    paceOptions = {
+		document: true,
+		elements: true
+    };
+	Pace.on('hide', function(){
+		//加载完成
+		document.getElementById('index-box').style.display = 'block';
+
+		//开始游戏的动画
+		delayAnimate('game-btn','bounceInDown','pulse',2500);
+
+		//活动规则弹框
+		$('#rule-btn').on('click',function() {
+			showBox1('izoomIn','ibounceOut','rule-box','rule-close');
+		});
+
+		//开始游戏
+		$('#game-btn').on('click',function() {
+			window.location.href = 'index2.html';
+		});
+    });
+</script>
+<link rel="stylesheet" type="text/css" href="../../Scripts/mdialog/css/basic.css">
+<link rel="stylesheet" type="text/css" href="../../Content/css/animate.css">
+<link rel="stylesheet" type="text/css" href="../../Scripts/loaders/loaders.css"/>
+<link rel="stylesheet" type="text/css" href="../../Content/css/base.css">
+
+<link rel="stylesheet" type="text/css" href="../../Content/css/index.css?id=oo">
+<script type="text/javascript">
+	var Json = {"InUrl":"\/Index\/SetSeries"};
+</script>
+</head>
+<body>
+
+<!-- 与后台交互时的loading -->
+<div class="loadBox loading">
+    <div class="loader-inner ball-pulse-rise"></div>
+</div>
+
+<!-- 页面内容 screen单屏，page长屏-->
+<div class="index-box screen index1" id="index-box">
+	<img src="../../Content/Images/1/a1.png" class="a1 animated bounceInDown">
+	<img src="../../Content/Images/1/a2.png" class="a2 animated bounceInLeft">
+	<div class="rule-btn" id="rule-btn"></div>
+	<div class="game-btn animated bounceInDown" id="game-btn"></div>
+	<div class="bar"></div>
+	<div class="fixBottom"></div>
+
+	<!-- 遮层 class="afix" 全HTML只用一个 -->
+	<div class="afix"></div>
+	<!-- 弹框 class="box"-->
+	<div class="box" id="rule-box">
+		<div class="rule-box">
+			<img src="../../Content/Images/1/a6.png" class="a6">
+			<div class="rule-info">
+				<p class="title">一、活动时间：</p>
+				<p class="detail">2016年2月16日10:00:00 - 2016年2月19日10:00:00</p>
+          
+				<p class="title">二、活动用户：</p>
+				<p class="detail">同一个微信账户、手机号、QQ号满足任一条件视为同一用户，同一用户可多次进入游戏查看游戏进度。</p>
+
+				<p class="title">三、活动玩法：</p>
+				<p class="detail">1、用户通过点击首页“开始游戏”参加猴运送你活动；任意点击4个主题进入翻牌环节，如翻开的3张牌图案与该主题图案一致，即获得抽奖机会。<br/>
+				2、用户开始游戏后，亦可通过转发给好友或分享朋友圈获得抽奖机会<br/>
+				3、每个用户累计有3次抽奖机会</p>
+
+				<p class="title">四、活动奖品</p>
+				<p class="detail">1、黄金(足金)Charme串珠系列生肖猴转运珠（价值1280元）<br/>
+
+				<img src="../../Content/Images/1/h7.png" class="rule-h7 imgBg">
+
+				活动时间内，获奖者请填写登记有效领奖信息，过期仍未填写则视为放弃。<br/>
+				2、限量版周生生萝卜兔钥匙包<br/>
+				<img src="../../Content/Images/2/b12.png" class="rule-b12 imgBg">
+				活动时间内，获奖者请填写登记有效领奖信息，过期仍未填写则视为放弃。<br/>
+				3、30元（唯品会）优惠口令<br/>
+				有效期截至2月19日10:00:00。</p>
+
+				<p class="title">五、获奖名单</p>
+				<p class="detail">获得黄金生肖猴转运珠的名单将于活动结束后3个工作日内在【周生生网上珠宝店】微信公众号进行公布，公示时间为7天。查询获奖名单，请输入“好运送你”</p>
+
+				<p class="title">六、其他</p>
+				<p class="detail">1、主办方有权随时更改此活动条款及细则而无须事前通知或负上责任。<br/>
+				2、参加者所提供之个人资料，仅用作是次活动核实得奖者身份及联络领奖事宜。<br/>
+				3、以任何非法行为破坏活动者，其参加及得奖资格将作废，主办方对有关参加者或得奖者保留法律追诉权。<br/>
+				4、以上条款及细则如有任何争议，主办单位保留是次活动之最终决定权。</p>
+			</div>
+			<div class="rule-close webkit">关闭</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="../../Scripts/Index/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../../Scripts/pageResponse-master/js/pageResponse.js"></script>
+<script type="text/javascript" src="../../Scripts/loaders/loaders.css.js"></script>
+<script type="text/javascript" src="../../Scripts/mdialog/js/mdialog.js"></script>
+</body>
+</html>

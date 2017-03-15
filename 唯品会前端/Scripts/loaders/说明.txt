@@ -1,0 +1,16 @@
+﻿引用：
+<script type="text/javascript" src="../Scripts/Index/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../Scripts/loaders/loaders.css.js"></script>
+<link rel="stylesheet" type="text/css" href="../Scripts/loaders/loaders.css">
+
+使用：
+	$('.loadBox').css('display','-webkit-box'); //显示,如loadBox两个或以上，则要区分是哪一个显示
+	
+	$('.loadBox').hide(); //隐藏
+
+
+界面:
+	<!-- loading -->
+	<div class="loadBox">
+		<div class="loader-inner ball-spin-fade-loader"></div>
+	</div>

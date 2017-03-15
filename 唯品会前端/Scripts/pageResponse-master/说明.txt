@@ -1,0 +1,14 @@
+页面适配
+
+引入：
+<script type="text/javascript" src="../Scripts/Index/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../Scripts/pageResponse-master/js/pageResponse.js"></script>
+
+html：
+在最大div里加入class
+
+1:页面多长显示多长加class:'page'
+2:单屏显示加class:'screen'
+
+例：<div class="index-box page"></div>
+	或<div class="index-box screen"></div>
