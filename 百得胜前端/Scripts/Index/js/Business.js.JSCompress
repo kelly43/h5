@@ -1,0 +1,10 @@
+﻿<jscompress public="http://www.jscompress.cn/" command="import-combineset">
+<combinefile path="Business.js">
+    <auto value="0" />
+    <sourcefile path=".\gc.js" />
+    <sourcefile path=".\panel.js" />
+    <sourcefile path=".\scene.js" />
+    <sourcefile path=".\gas.js" />
+    <sourcefile path=".\roo.js" />
+</combinefile>
+</jscompress>

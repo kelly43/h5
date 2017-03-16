@@ -1,0 +1,25 @@
+﻿<jscompress public="http://www.jscompress.cn/" command="import-combineset">
+<combinefile path="KWhale.js">
+    <auto value="0" />
+    <sourcefile path=".\KWhaleAnimate.js" />
+    <sourcefile path=".\Line.js" />
+    <sourcefile path=".\RES.js" />
+    <sourcefile path=".\Shape.js" />
+    <sourcefile path=".\Spirte.js" />
+    <sourcefile path=".\Stage.js" />
+    <sourcefile path=".\Stats.js" />
+    <sourcefile path=".\Text.js" />
+    <sourcefile path=".\Tween.js" />
+    <sourcefile path=".\Utils.js" />
+    <sourcefile path=".\World.js" />
+    <sourcefile path=".\Bitmap.js" />
+    <sourcefile path=".\BitmapFont.js" />
+    <sourcefile path=".\DisplayObject.js" />
+    <sourcefile path=".\Form.js" />
+    <sourcefile path=".\Hammerjs.js" />
+    <sourcefile path=".\InitKWahle.js" />
+    <sourcefile path=".\KBox2d.js" />
+    <sourcefile path=".\KEvent.js" />
+    <sourcefile path=".\KPhysical.js" />
+</combinefile>
+</jscompress>
