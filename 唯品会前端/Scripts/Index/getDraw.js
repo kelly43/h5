@@ -222,6 +222,7 @@ var drawCard = function(pace) {
         "openCode":1001,
         "chanceKey":"dsfasf"
     };
+    imgJoin(result.cardImg);
     drawCardReback(result);
 }
 
