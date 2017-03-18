@@ -297,7 +297,7 @@ Panel.prototype={
         };
         var blurPrize = function (i) {
             prizeBtn[i] = that.getActor("playGame", "prize" + (i + 1));
-            prizeBtn[i].blur();
+            //prizeBtn[i].blur();
         };
         for (var i = 0; i < 4; i++) {
             blurPrize(i);
@@ -305,7 +305,7 @@ Panel.prototype={
         var prizeArr = userJson.Data.AwardRecord;
         var showPrize = function (obj) {
             var index = obj.Id - 1;
-            prizeBtn[index].focus();
+            //prizeBtn[index].focus();
             new KEvent(prizeBtn[index], {type: "click"}, function () {
                 that.prizePanel(obj)
             });

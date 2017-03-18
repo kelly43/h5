@@ -38,6 +38,69 @@ IHotyi.Config = {
                         "IsGet": true,
                         "ShopPhone": "(853)2823 4567",
                         "Eights": "45646456"
+                    },
+                    {
+                        "Id": 1,
+                        "AwardName": "海洋王國萬聖節夜間門票8折",
+                        "AwardDesc": "",
+                        "AwardType": 2,
+                        "TermsConditions": "海洋王國萬聖節夜間門票8折海洋王國萬聖節夜間門票8折海洋王國萬聖節夜間門票" +
+                        "8折海洋王國萬聖節夜間門票8折海洋王國萬聖節夜間門票8折海洋王國萬聖節夜間門票8折",
+                        "ApplyShop": "海洋王國萬聖節夜間門票8折海洋王國萬聖節夜間門票8折海洋王國萬聖節夜" +
+                        "間門票8折海洋王國萬聖節夜間門票8折",
+                        "AwardImg": "../../Content/Images/img/g3-1.png",
+                        "ExchangeImg": "",
+                        "ChanceKey": "PAFIIFBJ1",
+                        "IsChange": false,
+                        "UserName": "",
+                        "UserPhoneCode": "",
+                        "UserPhone": "",
+                        "UserAddress": "",
+                        "IsGet": true,
+                        "ShopPhone": "(853)2823 4567",
+                        "Eights": "45646456"
+                    },
+                    {
+                        "Id": 2,
+                        "AwardName": "海洋王國萬聖節夜間門票8折",
+                        "AwardDesc": "",
+                        "AwardType": 2,
+                        "TermsConditions": "海洋王國萬聖節夜間門票8折海洋王國萬聖節夜間門票8折海洋王國萬聖節夜間門票" +
+                        "8折海洋王國萬聖節夜間門票8折海洋王國萬聖節夜間門票8折海洋王國萬聖節夜間門票8折",
+                        "ApplyShop": "海洋王國萬聖節夜間門票8折海洋王國萬聖節夜間門票8折海洋王國萬聖節夜" +
+                        "間門票8折海洋王國萬聖節夜間門票8折",
+                        "AwardImg": "../../Content/Images/img/g3-2.png",
+                        "ExchangeImg": "",
+                        "ChanceKey": "PAFIIFBJ1",
+                        "IsChange": false,
+                        "UserName": "",
+                        "UserPhoneCode": "",
+                        "UserPhone": "",
+                        "UserAddress": "",
+                        "IsGet": true,
+                        "ShopPhone": "(853)2823 4567",
+                        "Eights": "45646456"
+                    },
+                    {
+                        "Id": 3,
+                        "AwardName": "海洋王國萬聖節夜間門票8折",
+                        "AwardDesc": "",
+                        "AwardType": 2,
+                        "TermsConditions": "海洋王國萬聖節夜間門票8折海洋王國萬聖節夜間門票8折海洋王國萬聖節夜間門票" +
+                        "8折海洋王國萬聖節夜間門票8折海洋王國萬聖節夜間門票8折海洋王國萬聖節夜間門票8折",
+                        "ApplyShop": "海洋王國萬聖節夜間門票8折海洋王國萬聖節夜間門票8折海洋王國萬聖節夜" +
+                        "間門票8折海洋王國萬聖節夜間門票8折",
+                        "AwardImg": "../../Content/Images/img/g3-3.png",
+                        "ExchangeImg": "",
+                        "ChanceKey": "PAFIIFBJ1",
+                        "IsChange": false,
+                        "UserName": "",
+                        "UserPhoneCode": "",
+                        "UserPhone": "",
+                        "UserAddress": "",
+                        "IsGet": true,
+                        "ShopPhone": "(853)2823 4567",
+                        "Eights": "45646456"
                     }
                 ]
             }
@@ -111,7 +174,7 @@ IHotyi.Config = {
                 "IsGet": true,
                 "ShopPhone": "(853)2823 4567",
                 "Eights": "45646456",
-                "IsWin": true
+                "IsWin": false
             }
         },
         //6.系統狀態
