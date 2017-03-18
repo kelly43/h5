@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>可口可樂</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="format-detection" content="email=no" />
+	<link rel="stylesheet" type="text/css" href="../../Content/css/base.css">
+	<style>
+		*{margin: 0;padding: 0;border: 0}
+		body{background:#ffffff;position: relative;padding: 0;margin: 0;}
+		canvas{position: absolute;left: 0;top:0;}
+		.posdiv{position: absolute;left: 0;top:0;}
+		.webkitV{display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-box-pack:center;
+			-webkit-box-align: center;}
+	</style>
+</head>
+<body>
+<canvas id = "canvas_e"></canvas>
+<canvas id = "canvas_bg"></canvas>
+<canvas id = "canvas_stage"></canvas>
+<canvas id = "canvas_stage_top"></canvas>
+<!--<canvas style="background:#000" id="canvas" width="600px" height="600px"></canvas>-->
+
+<div id="loadline" class="posdiv" style="background:#ffac22;opacity: 0.5;"></div>
+</body>
+<script src="../../Scripts/Index/js/KWhale/Common/HotyiLoad.js"></script>
+<script src="../../Scripts/Index/js/KWhale/Common/HotyiCommon.js"></script>
+<script src="../../Scripts/Index/js/KWhale/Kwhale.min.1.2.js"></script>
+<script src="../../Scripts/Index/js/KWhale/InitKWahle.js"></script>
+<script src="../../Scripts/Index/js/KWhale/KEvent.js"></script>
+<script type="text/javascript" src="../../Scripts/Index/jquery-1.11.1.min.js"></script>
+<script>
+	window.onload=function() {
+		var base = "../../Content/Images/img/";
+		RES.RES_JSON = {
+			"e3": {isLoad: false, src: base+"e3.jpg"},
+			"e2": {isLoad: false, src: base+"e2.png"},
+			"e1": {isLoad: false, src: base+"e1.png"}
+		};
+		World.init();
+		//canvas_e
+		var canvas_e = document.getElementById("canvas_e");
+		var stage_e = new Stage(canvas_e);
+		var canvas_bg = document.getElementById("canvas_bg");
+		var stage_bg = new Stage(canvas_bg);
+		var canvas_stage = document.getElementById("canvas_stage");
+		var stage_main = new Stage(canvas_stage);
+		var canvas_stage_top = document.getElementById("canvas_stage_top");
+		var stage_top = new Stage(canvas_stage_top);
+		window["gc"];
+		//for err
+		var bgmask = new Shape.Rectangle({x:0,y:0},stage_e.sw,stage_bg.sh,"#ffffff");
+		canvas_e.style.background="#FFFFFF";
+		stage_e.addChild(bgmask);
+		World.Go(function () {
+			TWEEN.update();
+			stage_e.worldDraw();
+			stage_bg.worldDraw();
+			stage_main.worldDraw();
+			stage_top.worldDraw();
+			if(HotyiLoad.IsPlayEnd&&HotyiLoad.Isloaded){
+				HotyiLoad.IsPlayEnd=false;
+				HotyiLoad.Isloaded=false;
+				document.getElementById("loadline").style.display="none";
+				HotyiLoad.Load._removeLoadingAnimate(function(){
+					//错误图片
+					canvas_e.style.background = "#fff";
+					stage_e.worldDraw();
+					stage_e.isAction=false;
+
+					var s_top = stage_top;
+					var bg = new Bitmap(RES.getRES("e3"));
+					KWhaleUtils.AddStageByScaleHNoCheck(s_top,bg,1);
+					bg.anchorX=bg.anchorY=0.5;
+					bg.x=s_top.sw/2;
+					bg.y=s_top.sh/2;
+
+					var qrcode = RES.getRES("e1");
+					qrcode.style.position = "absolute";
+					qrcode.style.width = s_top.sh/1135*364/window["KWRatio"] + "px";
+					qrcode.style.top = s_top.sh/1135*327/window["KWRatio"] + "px";
+					document.body.appendChild(qrcode);
+					qrcode.style.left = s_top.sw/2/KWRatio-qrcode.offsetWidth/2+"px";
+
+					var startBtn = new Bitmap(RES.getRES("e2"));
+					KWhaleUtils.AddStageByScaleHNoCheck(s_top,startBtn,119/1135);
+					startBtn.anchorX = 0.5;
+					startBtn.x=s_top.sw/2;
+					startBtn.y=s_top.sh/1135*845;
+
+					isCanTouch = true;
+					//开始游戏
+					new KEvent(startBtn,{type:"click"}, function () {
+						window.location.href = "index.html";
+					})
+
+				},stage_main);
+			};
+		});
+		HotyiCommon.InitCommon(stage_main,"../../Content/Images/img/logo.png","#ffac22");
+	};
+</script>
+</html>

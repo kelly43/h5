@@ -1,0 +1,47 @@
+body, div, span, p, var, em, strong, a, h1, h2, h3, h4, h5, h6, input, textarea, ul, li, img {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica;
+}
+div, div img {
+	border: none;
+	text-decoration: none;
+	-webkit-tap-highlight-color: transparent;/*去手机蓝边*/
+	-webkit-appearance: none;/*去手机蓝边*/
+}
+input,textarea {
+    border: 0; /* 去掉input,textarea的内阴影：方法1 */
+    -webkit-appearance: none; /* 去掉input,textarea的内阴影：方法2 */
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+.contentBox {
+  display: none;
+}
+.screen, .page {
+  position: relative;
+  display: none;
+}
+.loading {
+	display: none;
+}
+.imgBg {
+  display: block;
+  margin: 0 auto;
+}
+.webkit {
+  display: -webkit-box;
+  /*-webkit-box-orient: vertical;*/
+  -webkit-box-pack:center;
+  -webkit-box-align: center;
+}
+/*页面加载loading的颜色*/
+.pace .pace-progress {
+	/*background: rgba(192,76,109,1);*/
+}
+
+
+
+

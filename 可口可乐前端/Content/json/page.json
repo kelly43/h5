@@ -1,0 +1,276 @@
+{
+  "index": {
+	"realHeight": "1300",
+	"actors": {
+	  "a12": {
+		"type": "image",
+		"sx": -45.43010752688171,
+		"sy": 1375,
+		"sh": 794,
+		"src": "../../Content/Images/img/index/a12.png"
+	  },
+	  "a11": {
+		"type": "image",
+		"sx": "center",
+		"sy": 1049,
+		"sh": 502,
+		"src": "../../Content/Images/img/index/a11.png"
+	  },
+	  "a7": {
+		"type": "image",
+		"sx": -305.77956989247315,
+		"sy": 395.0387231182795,
+		"sh": 89,
+		"src": "../../Content/Images/img/index/a7.png"
+	  },
+	  "a8": {
+		"type": "image",
+		"sx": 274.3279569892473,
+		"sy": 84.01721774193548,
+		"sh": 123,
+		"src": "../../Content/Images/img/index/a8.png"
+	  },
+	  "a9": {
+		"type": "image",
+		"sx": 3.494623655913979,
+		"sy": 1036.3021639784947,
+		"sh": 363,
+		"src": "../../Content/Images/img/index/a9.png"
+	  },
+	  "a10": {
+		"type": "image",
+		"sx": 26.209677419354836,
+		"sy": 879.0440994623656,
+		"sh": 39,
+		"src": "../../Content/Images/img/index/a10.png"
+	  },
+	  "a2": {
+		"type": "image",
+		"sx": -246.3709677419355,
+		"sy": 28.103239247311826,
+		"sh": 28,
+		"src": "../../Content/Images/img/index/a2.png"
+	  },
+	  "a3": {
+		"type": "image",
+		"sx": -136.29032258064515,
+		"sy": 257.0010887096774,
+		"sh": 31,
+		"src": "../../Content/Images/img/index/a3.png"
+	  },
+	  "a1": {
+		"type": "image",
+		"sx": -300.5376344086021,
+		"sy": 68.29141129032259,
+		"sh": 71,
+		"src": "../../Content/Images/img/index/a1.png"
+	  },
+	  "a4": {
+		"type": "image",
+		"sx": 304.0322580645161,
+		"sy": 332.135497311828,
+		"sh": 82,
+		"src": "../../Content/Images/img/index/a4.png"
+	  },
+	  "a5": {
+		"type": "image",
+		"sx": -13.978494623655916,
+		"sy": 262.24302419354837,
+		"sh": 486,
+		"src": "../../Content/Images/img/index/a5.png"
+	  },
+	  "a6": {
+		"type": "image",
+		"sx": -1.7473118279569895,
+		"sy": 157.40431451612903,
+		"sh": 247,
+		"src": "../../Content/Images/img/index/a6.png"
+	  }
+	}
+  },
+  "noPrize": {
+	"realHeight": "1135",
+	"actors": {
+	  "f2": {
+		"type": "image",
+		"sx": "center",
+		"sy": "center",
+		"sh": 1135,
+		"src": "../../Content/Images/img/f2.jpg"
+	  },
+	  "f1": {
+		"type": "image",
+		"sx": "center",
+		"sy": 676.9491517719568,
+		"sh": 119,
+		"src": "../../Content/Images/img/f1.png"
+	  }
+	}
+  },
+  "playGame": {
+	"realHeight": "1531",
+	"actors": {
+	  "d15": {
+		"type": "image",
+		"sx": "center",
+		"sy": "center",
+		"sh": 1531,
+		"src": "../../Content/Images/img/playGame/d15.jpg"
+	  },
+	  "d6": {
+		"type": "image",
+		"sx": 253.4189497716895,
+		"sy": 78.7935441780822,
+		"sh": 123,
+		"src": "../../Content/Images/img/playGame/d6.png"
+	  },
+	  "d11": {
+		"type": "image",
+		"sx": -190.5011415525114,
+		"sy": 971.8768775114156,
+		"sh": 150,
+		"src": "../../Content/Images/img/playGame/d11.png"
+	  },
+	  "d9": {
+		"type": "image",
+		"sx": -1.7477168949771689,
+		"sy": 552.4248227168949,
+		"sh": 741,
+		"src": "../../Content/Images/img/playGame/d9.png"
+	  },
+	  "d12": {
+		"type": "image",
+		"sx": 197.4920091324201,
+		"sy": 964.8860099315068,
+		"sh": 123,
+		"src": "../../Content/Images/img/playGame/d12.png"
+	  },
+	  "d13": {
+		"type": "image",
+		"sx": 286.6255707762557,
+		"sy": 987.60632956621,
+		"sh": 99,
+		"src": "../../Content/Images/img/playGame/d13.png"
+	  },
+	  "prize1": {
+		"type": "image",
+		"sx": -136.32191780821918,
+		"sy": 1235.782128652968,
+		"sh": 163,
+		"src": "../../Content/Images/img/playGame/prize1.png"
+	  },
+	  "prize2": {
+		"type": "image",
+		"sx": 174.7716894977169,
+		"sy": 1235.782128652968,
+		"sh": 163,
+		"src": "../../Content/Images/img/playGame/prize2.png"
+	  },
+	  "prize3": {
+		"type": "image",
+		"sx": -136.32191780821918,
+		"sy": 1422.7878364155251,
+		"sh": 163,
+		"src": "../../Content/Images/img/playGame/prize3.png"
+	  },
+	  "prize4": {
+		"type": "image",
+		"sx": 174.7716894977169,
+		"sy": 1422.7878364155251,
+		"sh": 163,
+		"src": "../../Content/Images/img/playGame/prize4.png"
+	  },
+	  "d1": {
+		"type": "image",
+		"sx": -276.13926940639266,
+		"sy": 80.54126107305936,
+		"sh": 71,
+		"src": "../../Content/Images/img/playGame/d1.png"
+	  },
+	  "d2": {
+		"type": "image",
+		"sx": -220.21232876712327,
+		"sy": 42.091489383561644,
+		"sh": 28,
+		"src": "../../Content/Images/img/playGame/d2.png"
+	  },
+	  "d3": {
+		"type": "image",
+		"sx": -82.14269406392694,
+		"sy": 159.18852134703195,
+		"sh": 19,
+		"src": "../../Content/Images/img/playGame/d3.png"
+	  },
+	  "d4": {
+		"type": "image",
+		"sx": -87.38584474885845,
+		"sy": 105.00929760273972,
+		"sh": 145,
+		"src": "../../Content/Images/img/playGame/d4.png"
+	  },
+	  "d5": {
+		"type": "image",
+		"sx": -3.4954337899543377,
+		"sy": 98.01843002283105,
+		"sh": 148,
+		"src": "../../Content/Images/img/playGame/d5.png"
+	  },
+	  "d7-1": {
+		"type": "image",
+		"sx": -168,
+		"sy": 386,
+		"sh": 27,
+		"src": "../../Content/Images/img/playGame/d7.png"
+	  },
+	  "d7-2": {
+		"type": "image",
+		"sx": -136,
+		"sy": 386,
+		"sh": 27,
+		"src": "../../Content/Images/img/playGame/d7.png"
+	  },
+	  "d7-3": {
+		"type": "image",
+		"sx": -104,
+		"sy": 386,
+		"sh": 27,
+		"src": "../../Content/Images/img/playGame/d7.png"
+	  },
+	  "d7-4": {
+		"type": "image",
+		"sx": -72,
+		"sy": 386,
+		"sh": 27,
+		"src": "../../Content/Images/img/playGame/d7.png"
+	  },
+	  "d7-5": {
+		"type": "image",
+		"sx": -40,
+		"sy": 386,
+		"sh": 27,
+		"src": "../../Content/Images/img/playGame/d7.png"
+	  },
+	  "d7-6": {
+		"type": "image",
+		"sx": -8,
+		"sy": 386,
+		"sh": 27,
+		"src": "../../Content/Images/img/playGame/d7.png"
+	  },
+	  "d7-7": {
+		"type": "image",
+		"sx": 24,
+		"sy": 386,
+		"sh": 27,
+		"src": "../../Content/Images/img/playGame/d7.png"
+	  },
+	  "d7-8": {
+		"type": "image",
+		"sx": 56,
+		"sy": 386,
+		"sh": 27,
+		"src": "../../Content/Images/img/playGame/d7.png"
+	  }
+	}
+  }
+}
