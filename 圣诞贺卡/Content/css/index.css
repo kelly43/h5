@@ -1,0 +1,430 @@
+body, div, span, p, var, em, strong, a, h1, h2, h3, h4, h5, h6, input, textarea, ul, li, img {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica;
+}
+div, div img {
+	border: none;
+	text-decoration: none;
+	-webkit-tap-highlight-color: transparent;/*去手机蓝边*/
+	-webkit-appearance: none;/*去手机蓝边*/
+}
+
+/*声明 WebFont*/
+@font-face {
+  font-family: 'aatf';
+  src: url('../font/wxh.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*使用选择器指定字体*/
+.text-box {
+    font-family: 'aatf';
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+.index-box {
+	overflow: hidden;
+    background-color: #960001;
+    display: none;
+}
+.page{
+    position: relative;
+}
+.loadBox {
+    background-color: #960001;
+}
+/*雪花 star*/
+.afill {
+    width: 100%;
+    height: 100%;
+}
+.snow-wrap {
+	position:absolute;
+	top: -50px;
+	width:100%;
+	height: 100%;
+}
+.snow-wrap i {
+	position:absolute;
+	width: 6px;
+	height: 6px;
+	/*background: url(../Images/hua.png) no-repeat;
+	background-size: 100%;*/
+    background-color: #F2F2F2;
+    border-radius: 50%;
+    -webkit-box-shadow:0 0 10px #fff;  
+    box-shadow:0 0 10px #fff;
+    -webkit-transform-origin:left -20px;
+    -webkit-animation:falling 8.7s linear 2s infinite;
+    animation:falling 8.7s linear 2s infinite;
+}
+
+@-webkit-keyframes falling {
+    0% { 
+        -webkit-transform: translate3d(0,0,0) rotate(0deg);
+    }
+    100% { 
+        -webkit-transform: translate3d(0,700px,0) rotate(360deg);
+    }	
+}
+@keyframes falling {
+    0% { 
+        transform: translate3d(0,0,0) rotate(0deg);
+    }
+    100% { 
+        transform: translate(0,700px) rotate(360deg);
+    }	
+}
+.snow-wrap .snow-s{
+    height: 8px;
+    width: 8px;
+    -webkit-animation-duration: 7s;
+    animation-duration: 7s;
+}
+.snow-wrap .snow-m{
+    height: 10px;
+    width: 10px;
+    -webkit-animation-duration: 7s;
+    animation-duration: 7s;
+}
+.snow-wrap .snow-l{
+    height: 12px;
+    width: 12px;
+    animation-duration: 6.5s;
+    -webkit-animation-duration: 6.5s;
+}
+.snow-wrap .snow-delay1{
+    -webkit-animation-delay: 2.4s;
+    animation-delay: 2.4s;
+}
+.snow-wrap .snow-delay2{
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+.snow-wrap .snow-delay3{
+    -webkit-animation-delay: 3.6s;
+    animation-delay: 4.6s;
+}
+.snow-wrap .snow-delay4{
+    -webkit-animation-delay: 4.3s;
+    animation-delay: 6.3s;
+}
+.snow-wrap .snow-delay5{
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+.snow-wrap .snow-delay6{
+    -webkit-animation-delay: 5.4s;
+    animation-delay: 0.4s;
+}
+.snow-wrap .snow-delay7{
+    -webkit-animation-delay: 6.4s;
+    animation-delay: 0.4s;
+}
+
+/*雪花 end*/
+
+/*内容 star*/
+.main-box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    overflow: hidden;
+}
+.bottom-box {
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    left: -320px;
+    top: 437px;
+    border-radius: 50%;
+    background-color: #F2F2F2;
+}
+.tree {
+    width: 89px;
+    height: 103px;
+    position: absolute;
+    top: 374px;
+    left: 20px;
+    /*-webkit-animation-delay: 1s;*/
+    /*-webkit-animation-duration: 2s;*/
+}
+.gift {
+    width: 135px;
+    height: 72px;
+    position: absolute;
+    top: 405px;
+    right: 10px;
+    -webkit-animation-delay: 1s;
+}
+.ren {
+    width: 223px;
+    height: 264px;
+    position: absolute;
+    top: 233px;
+    left: 68px;
+    -webkit-animation-delay: 2s;
+}
+.board {
+    width: 157px;
+    position: absolute;
+    top: 388px;
+    left: 102px;
+    -webkit-animation-delay: 3s;
+}
+.qrcode {
+    width: 93px;
+    height: 123px;
+    position: absolute;
+    top: 366px;
+    left: 240px;
+    -webkit-animation-delay: 4s;
+}
+.theme {
+    width: 183px;
+    height: 200px;
+    position: absolute;
+    top: 15px;
+    left: 88px;
+    background: url(../Images/b1.png) no-repeat;
+    background-size: 100%;
+    -webkit-animation-delay: 3s;
+    display: -webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align: center;
+}
+.btn1 {
+    width: 269px;
+    position: absolute;
+    top: 495px;
+    left: 45px;
+    -webkit-animation-delay: 5s;
+}
+.btn2 {
+    width: 269px;
+    position: absolute;
+    top: 495px;
+    left: 45px;
+    -webkit-animation-delay: 5s;
+}
+.input-box {
+    width: 360px;
+    height: 69px;
+    position: absolute;
+    top: 498px;
+    left: 0;
+    display: none;
+    background: url(../Images/b5.png) no-repeat;
+    background-size: 100%;
+}
+.wish {
+    width: 180px;
+    height: 30px;
+    background-color: transparent;
+    outline: none;
+    border: 0;
+    position: absolute;
+    top: 20px;
+    left: 60px;
+    font-size: 14px;
+}
+.wish::-webkit-input-placeholder, .wish { 
+    color: #fff; 
+} 
+.btn3 {
+    width: 83px;
+    height: 30px;
+    position: absolute;
+    top: 22px;
+    right: 20px;
+}
+
+.text-box {
+    width: 160px;
+    height: 60px;
+    overflow: hidden;
+    position: absolute;
+    left: 10px;
+    top: 92px;
+    color: #fff;
+    font-size: 22px;
+    line-height: 29px;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /*-webkit-box-orient: vertical;*/
+    -webkit-box-pack:center;
+    -webkit-box-align: center;
+    text-indent: 7px;
+}
+.bounceOutDown {
+    -webkit-animation-delay: 0s;
+}
+
+.progress-box {
+    width: 266px;
+    height: 146px;
+    background: url(../Images/b6.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -73px;
+    margin-left: -133px;
+    display: -webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align: center;
+}
+/*进度条*/
+.run {
+    width: 196px;
+    position: relative;
+    /*margin: 0 auto;
+    -webkit-transform:translateY(180px);*/
+    
+}
+.di {
+    width: 200px;
+    /*padding: 0 2px;*/
+    height: 34px;
+    background-color: #960001;
+    border-radius: 15px;
+    position: relative;
+    bottom: 0;
+    left: -2px;
+}
+
+@-webkit-keyframes progress-bar-stripes {
+    from{background-position:25px 0}
+    to{background-position:0 0}
+    30% {
+        width: 60%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+@keyframes progress-bar-stripes{
+    from{background-position:25px 0}
+    to{background-position:0 0}
+    30% {
+        width: 60%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+@-webkit-keyframes car {
+    30% {
+        left: 87.6px;
+    }
+    100% {
+        left: 168px;
+    }
+}
+@keyframes car {
+    30% {
+        left: 87.6px;
+    }
+    100% {
+        left: 168px;
+    }
+}
+.runner {
+    position: absolute;
+    bottom: 2px;
+    left: 0; /*往左边跑*/
+    height: 30px;
+    background-color: #FFAA11;
+    width: 0; /*初始值*/
+    border-radius: 15px;
+    background-image: linear-gradient(-45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-image: -webkit-linear-gradient(-45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    -webkit-background-size: 25px 25px;
+    background-size: 25px 25px;
+    -webkit-animation: progress-bar-stripes 6s linear;
+    animation: progress-bar-stripes 6s linear;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.car {
+    width: 34px;
+    height: 47px;
+    background: url(../Images/b7.png) no-repeat;
+    background-size: 100%;
+    position: relative;
+    left: -30px;
+    -webkit-animation: car 6s linear;
+    animation: car 6s linear;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.finish {
+    width: 345px;
+    height: 296px;
+    margin: 0 auto;
+    margin-top: 30%;
+    background: url(../Images/b8.png) no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+.check {
+    position: absolute;
+    left: 100px;
+    bottom: 20px;
+    width: 134px;
+    height: 34px;
+}
+.blackBg {
+    background-color: rgba(255,255,255,.6);
+}
+.whiteBg {
+    background-color: rgba(0,0,0,.6);
+}
+.share {
+    width: 100%;
+    height: 100%;
+    background: url(../Images/b9.png) no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+.arrowUp {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: -23px;
+    right: -16px;
+    display: -webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #F39800;
+    background: -webkit-gradient(radial,50% 50%,0,50% 50%,100,from(rgba(247,216,24,.6)),to(rgba(243,152,0,0.1)));
+    background-image: radial-gradient(circle farthest-corner at 50% 50% , rgba(247,216,24,1) 0%, rgba(243,152,0,.5) 50%, rgba(243,152,0,0.2) 110%);
+}
+.ball {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 25px;
+    left: 27px;
+    border-radius: 50%;
+    box-shadow: 0 0 30px #F6DB14;
+}
+.loader-inner {
+    line-height: 0;
+}
+.ball-scale > div {
+    background-color: #FFD349;
+    margin: 0;
+    line-height: 0;
+    width: 80px;
+    height: 80px;
+}
